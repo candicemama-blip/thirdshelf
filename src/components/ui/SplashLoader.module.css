@@ -1,0 +1,66 @@
+.splash {
+  position: fixed;
+  inset: 0;
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  z-index: 9999;
+}
+
+.spines {
+  position: relative;
+  width: 56px;
+  height: 56px;
+}
+
+/* 7 spines fanning out like book spines on a shelf */
+.spine {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 7px;
+  height: 28px;
+  border-radius: 2px;
+  transform-origin: bottom center;
+  animation: fanOpen 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  animation-delay: calc(var(--i) * 0.07s);
+}
+
+/* Terracotta to gold palette across the fan */
+.spine:nth-child(1) { background: #8B4513; transform: rotate(-54deg) translateX(-50%); }
+.spine:nth-child(2) { background: #A0522D; transform: rotate(-36deg) translateX(-50%); }
+.spine:nth-child(3) { background: #B8934A; transform: rotate(-18deg) translateX(-50%); }
+.spine:nth-child(4) { background: #C9A96E; transform: rotate(0deg)   translateX(-50%); }
+.spine:nth-child(5) { background: #B8934A; transform: rotate(18deg)  translateX(-50%); }
+.spine:nth-child(6) { background: #A0522D; transform: rotate(36deg)  translateX(-50%); }
+.spine:nth-child(7) { background: #8B4513; transform: rotate(54deg)  translateX(-50%); }
+
+@keyframes fanOpen {
+  from {
+    opacity: 0;
+    height: 0;
+  }
+  to {
+    opacity: 1;
+    height: 28px;
+  }
+}
+
+.wordmark {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-style: italic;
+  animation: fadeIn 0.6s ease 0.5s both;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

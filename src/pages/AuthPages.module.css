@@ -1,0 +1,103 @@
+.container {
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  padding: 24px;
+}
+
+.card {
+  width: 100%;
+  max-width: 400px;
+}
+
+.wordmark {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--text-light);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  font-style: italic;
+}
+
+.heading {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 6px;
+  line-height: 1.1;
+}
+
+.subheading {
+  font-family: 'EB Garamond', serif;
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin-bottom: 36px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.error {
+  background: #FDF0EC;
+  border: 1px solid #E8C4B8;
+  color: var(--accent);
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  font-family: 'Jost', sans-serif;
+  font-size: 0.875rem;
+}
+
+[data-theme="dark"] .error {
+  background: #2A1A14;
+  border-color: #4A2A1E;
+}
+
+.btn {
+  background: var(--accent);
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 0.875rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  width: 100%;
+  margin-top: 4px;
+}
+
+.btn:hover:not(:disabled) {
+  background: var(--accent-hover);
+}
+
+.switchText {
+  margin-top: 24px;
+  text-align: center;
+  font-family: 'Jost', sans-serif;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.switchText a {
+  color: var(--accent);
+}

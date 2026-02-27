@@ -1,0 +1,112 @@
+.page {
+  padding: 56px 24px 48px;
+  max-width: 680px;
+}
+
+.header {
+  margin-bottom: 28px;
+}
+
+.heading {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.8rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.0;
+  margin-bottom: 6px;
+}
+
+.sub {
+  font-family: 'EB Garamond', serif;
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+.searchWrap {
+  margin-bottom: 32px;
+}
+
+.search {
+  max-width: 320px;
+  font-family: 'Jost', sans-serif;
+  font-size: 0.875rem;
+}
+
+.group {
+  margin-bottom: 40px;
+}
+
+.bookTitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.wordList {
+  display: flex;
+  flex-direction: column;
+}
+
+.wordItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.wordItem:last-child { border-bottom: none; }
+
+.wordContent {
+  flex: 1;
+}
+
+.word {
+  display: block;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 2px;
+}
+
+.definition {
+  display: block;
+  font-family: 'EB Garamond', serif;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.deleteBtn {
+  background: none;
+  color: var(--text-light);
+  font-size: 1rem;
+  padding: 0 4px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.deleteBtn:hover { color: var(--accent); }
+
+.empty {
+  text-align: center;
+  padding: 60px 24px;
+}
+
+.emptyText {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.emptySub {
+  font-family: 'EB Garamond', serif;
+  color: var(--text-light);
+}
