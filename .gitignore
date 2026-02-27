@@ -27,3 +27,23 @@ build/
 # Capacitor
 ios/
 android/
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Build outputs
+dist/
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# macOS system files
+.DS_Store
+
+# IDE files
+.vscode/
