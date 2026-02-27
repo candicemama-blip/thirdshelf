@@ -1,0 +1,39 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.readonly {
+  cursor: default;
+}
+
+.star {
+  position: relative;
+  display: inline-block;
+  width: var(--star-size);
+  height: var(--star-size);
+}
+
+.starEmpty,
+.starFill {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.value {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+  min-width: 24px;
+}

@@ -1,0 +1,196 @@
+.page {
+  padding: 56px 24px 48px;
+  max-width: 480px;
+}
+
+.heading {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.8rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.0;
+  margin-bottom: 32px;
+}
+
+.card {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.field {
+  padding: 16px 20px;
+}
+
+.divider {
+  height: 1px;
+  background: var(--border);
+}
+
+.label {
+  display: block;
+  font-family: 'Jost', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.value {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.05rem;
+  color: var(--text);
+}
+
+.valueRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.editBtn {
+  background: none;
+  color: var(--text-muted);
+  font-family: 'Jost', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  padding: 0;
+}
+
+.editBtn:hover { color: var(--accent); }
+
+.editRow {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.nameInput {
+  flex: 1;
+}
+
+.saveBtn {
+  background: var(--accent);
+  color: #fff;
+  padding: 8px 14px;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  flex-shrink: 0;
+}
+
+.cancelBtn {
+  background: none;
+  color: var(--text-muted);
+  font-family: 'Jost', sans-serif;
+  font-size: 0.78rem;
+  padding: 0;
+}
+
+/* Theme toggle */
+.themeRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.themeLabel {
+  font-family: 'EB Garamond', serif;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.toggle {
+  width: 44px;
+  height: 24px;
+  background: var(--border);
+  border-radius: 12px;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  transition: background 0.25s ease;
+  flex-shrink: 0;
+}
+
+.toggleOn {
+  background: var(--accent);
+}
+
+.toggleKnob {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  transition: transform 0.25s ease;
+  display: block;
+}
+
+.toggleOn .toggleKnob {
+  transform: translateX(20px);
+}
+
+/* Stats */
+.statsCard {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px;
+  margin-bottom: 32px;
+}
+
+.statsHeading {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+  font-style: italic;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.statVal {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--text);
+  line-height: 1;
+}
+
+.statLbl {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.signOutBtn {
+  background: none;
+  color: var(--text-light);
+  font-family: 'Jost', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  padding: 0;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.signOutBtn:hover { color: var(--accent); }

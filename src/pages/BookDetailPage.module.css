@@ -1,0 +1,381 @@
+.page {
+  padding: 24px 24px 48px;
+  max-width: 680px;
+}
+
+.notFound {
+  padding: 48px;
+  font-family: 'EB Garamond', serif;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.back {
+  background: none;
+  color: var(--text-muted);
+  font-family: 'Jost', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  padding: 0;
+  margin-bottom: 24px;
+  display: inline-block;
+}
+
+.back:hover { color: var(--accent); }
+
+/* Header */
+.header {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 28px;
+}
+
+.cover {
+  width: 72px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 3px;
+  flex-shrink: 0;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+}
+
+.headerInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.15;
+  margin-bottom: 4px;
+}
+
+.author {
+  font-family: 'EB Garamond', serif;
+  font-size: 1rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-bottom: 14px;
+}
+
+.statusRow {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.statusBtn {
+  background: none;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  padding: 4px 12px;
+  font-family: 'Jost', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  border-radius: 20px;
+}
+
+.statusBtn:hover { color: var(--text); }
+
+.statusBtnActive {
+  background: none;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 28px;
+}
+
+.sectionLabel {
+  display: block;
+  font-family: 'Jost', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+/* Progress */
+.progressRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.pagesInput {
+  width: 80px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.pagesOf {
+  font-family: 'EB Garamond', serif;
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+.progressBar {
+  height: 4px;
+  background: var(--border);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.4s ease;
+}
+
+/* Dates */
+.datesRow {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.dateField {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.dateLabel {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-light);
+}
+
+.dateInput {
+  width: auto;
+  font-family: 'Jost', sans-serif;
+  font-size: 0.875rem;
+}
+
+/* Textarea */
+.textarea {
+  resize: vertical;
+  min-height: 140px;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* AI */
+.aiSection {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 28px;
+}
+
+.aiButtons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+}
+
+.aiBtn {
+  background: none;
+  color: var(--accent);
+  border: 1px solid rgba(139, 69, 19, 0.3);
+  padding: 7px 14px;
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+  border-radius: var(--radius);
+}
+
+.aiBtn:hover:not(:disabled) {
+  background: rgba(139, 69, 19, 0.06);
+}
+
+.aiBtn:disabled { opacity: 0.5; }
+
+.aiError {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.8rem;
+  color: var(--accent);
+  margin-top: 8px;
+}
+
+.aiResult {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.aiResultLabel {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  margin-bottom: 8px;
+}
+
+.aiSummary {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.05rem;
+  color: var(--text);
+  line-height: 1.7;
+  font-style: italic;
+}
+
+.themes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.theme {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  padding: 4px 10px;
+  border-radius: 3px;
+}
+
+.suggestions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.suggestion {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.suggestionTitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.suggestionAuthor {
+  font-family: 'EB Garamond', serif;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.suggestionReason {
+  font-family: 'EB Garamond', serif;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* Vocab */
+.wordForm {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.wordInput {
+  width: 120px;
+  flex-shrink: 0;
+}
+
+.defInput {
+  flex: 1;
+  min-width: 140px;
+}
+
+.wordAddBtn {
+  background: var(--accent);
+  color: #fff;
+  padding: 9px 16px;
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  flex-shrink: 0;
+}
+
+.wordAddBtn:hover { background: var(--accent-hover); }
+
+.wordList {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.wordItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.wordItem:last-child { border-bottom: none; }
+
+.wordContent {
+  flex: 1;
+  min-width: 0;
+}
+
+.word {
+  display: block;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.definition {
+  display: block;
+  font-family: 'EB Garamond', serif;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.wordDelete {
+  background: none;
+  color: var(--text-light);
+  font-size: 1.1rem;
+  padding: 0 4px;
+  flex-shrink: 0;
+}
+
+.wordDelete:hover { color: var(--accent); }
+
+/* Delete */
+.deleteSection {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+.deleteBtn {
+  background: none;
+  color: var(--text-light);
+  font-family: 'Jost', sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  padding: 0;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.deleteBtn:hover { color: #c0392b; }
